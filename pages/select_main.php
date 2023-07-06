@@ -1,5 +1,5 @@
 <?php
-if(isset($_SESSION['role'])){
+if (isset($_SESSION['role'])) {
   if ($_SESSION['role'] == 'dokter') {
     include 'edit_profil.php';
   }
@@ -11,7 +11,6 @@ if(isset($_SESSION['role'])){
   if ($_SESSION['role'] == 'admin') {
     include 'select_main_admin.php';
   }
-
-}else{
+} else {
   include 'select_main_user.php';
 }

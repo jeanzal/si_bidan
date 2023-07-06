@@ -7,20 +7,18 @@ include 'database/Konsultasi.php';
 include 'database/User.php';
 include 'database/Pesan.php';
 
-
-
 ?>
 <?php
 include 'templates/header.php';
 ?>
 
 <?php
-if(!isset($_GET['p'])){
+if (!isset($_GET['p'])) {
   $page = "select_main";
-}else{
+} else {
   $page = $_GET['p'];
 }
-include 'pages/'.$page .'.php';
+include 'pages/' . $page . '.php';
 ?>
 
 <?php
